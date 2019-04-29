@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter first number"
+        android:paddingLeft="15dp" />
+
+    <EditText
+        android:id="@+id/second"
+        android:layout_below="@id/first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:hint="Enter Second Number"/>
+
+    <Button
+        android:id="@+id/addbtn"
+        android:layout_below="@id/second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:onClick="addNumber"/>
+
+    <Button
+        android:id="@+id/subbtn"
+        android:layout_toRightOf="@id/addbtn"
+        android:layout_alignBaseline="@id/addbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sub"/>
+
+    <Button
+        android:id="@+id/divbtn"
+        android:layout_below="@id/addbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Div"/>
+
+    <Button
+        android:id="@+id/mulbtn"
+        android:layout_toRightOf="@id/divbtn"
+        android:layout_alignBaseline="@id/divbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mul"/>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_below="@id/divbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30dp"
+        android:text="Result: "/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/divbtn"
+        android:layout_marginTop="26dp"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/testbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button2"
+        android:layout_marginTop="19dp"
+        android:text="Test" />
+
+</RelativeLayout>
