@@ -31,14 +31,16 @@
         android:layout_alignBaseline="@id/addbtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Sub"/>
+        android:text="Sub"
+        android:onClick="subNumber"/>
 
     <Button
         android:id="@+id/divbtn"
         android:layout_below="@id/addbtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Div"/>
+        android:text="Div"
+        android:onClick="divNumber"/>
 
     <Button
         android:id="@+id/mulbtn"
@@ -46,30 +48,15 @@
         android:layout_alignBaseline="@id/divbtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Mul"/>
+        android:text="Mul"
+        android:onClick="multiplyNumber"/>
 
     <TextView
         android:id="@+id/result"
         android:layout_below="@id/divbtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingLeft="30dp"
-        android:text="Result: "/>
+        android:paddingLeft="30dp" />
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/divbtn"
-        android:layout_marginTop="26dp"
-        android:text="Button" />
-
-    <Button
-        android:id="@+id/testbtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/button2"
-        android:layout_marginTop="19dp"
-        android:text="Test" />
 
 </RelativeLayout>
